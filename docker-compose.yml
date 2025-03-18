@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app1:
+    build: .
+    environment:
+      - NODE_ID=app1
+    ports:
+      - "8001:8000"
+  app2:
+    build: .
+    environment:
+      - NODE_ID=app2
+    ports:
+      - "8002:8000"
+  app3:
+    build: .
+    environment:
+      - NODE_ID=app3
+    ports:
+      - "8003:8000"
